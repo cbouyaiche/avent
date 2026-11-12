@@ -76,30 +76,31 @@ var JOUR_TEST=24; // mettre 24 pour ouvrir toutes les cases pendant vos essais, 
 /* Défis : [type, titre, consigne, lien du formulaire de ce jour (vide = lien commun)]
    type : q = question, t = texte court, p = photo, s = capture d’écran */
 var D=[
+  var D=[
   ["p","Selfie Electro !","Prenez-vous en photo avec un logo Electro (logo imprimé, écran, produit, dessin, objet détourné…). Soyez créatifs !",""],
   ["p","Le mug du jour","Pas de déco à prévoir : photographiez votre mug ou votre boisson chaude préférée.",""],
   ["p","Demain, on s’habille en rouge !","Demain, portez un vêtement ou un accessoire rouge, prenez-vous en photo et déposez-la ici (la case reste ouverte).",""],
   ["t","Chariots en liaison chaude","Citez 3 chariots utilisés en liaison chaude.",""],
   ["t","Ma musique de Noël préférée","Quelle est votre chanson de Noël préférée ?",""],
-  ["t","Mon geste malin","Partagez un geste simple pour économiser l’énergie au travail ou à la maison.",""],
+  ["t","Ma recette","Partagez votre meilleure recette.",""],
   ["q","Quiz chaleur","Quelle unité mesure la puissance d’un radiateur électrique ? (watt, joule, ampère…)",""],
-  ["p","Ma vue du jour","Photographiez la vue depuis votre poste de travail.",""],
-  ["s","Ma playlist de Noël","Faites une capture d’écran de votre musique de Noël préférée sur votre appli (ou sa pochette).",""],
+  ["q","Logique","1 = 5  ·  2 = 25  ·  3 = 325  ·  4 = 4325  ·  5 = ?",""],
+  ["q","🎬 Qui a dit cette réplique ?","« La vie, c’est comme une boîte de chocolats. »  A. Rocky  ·  B. Forrest Gump  ·  C. Rain Man  ·  D. Le Cercle des poètes disparus",""],
   ["q","Quiz de Noël","Combien de rennes tirent traditionnellement le traîneau du Père Noël ?",""],
-  ["t","Merci à un collègue","Écrivez un mot de remerciement pour un collègue (prénom + message).",""],
-  ["s","Capture météo","Faites une capture d’écran de la météo de votre ville aujourd’hui.",""],
+  ["q","Énigme du chirurgien","Un père et son fils ont un accident de voiture. Le père décède. Le fils est emmené à l’hôpital. Le chirurgien le voit et dit : « Je ne peux pas l’opérer, c’est mon fils. » Comment est-ce possible ?",""],
+  ["q","Réfléchissez !","Vous entrez dans une pièce sombre avec une bougie, une lampe à pétrole et un poêle. Vous n’avez qu’une seule allumette. Qu’allumez-vous en premier ?",""],
   ["t","Quand j’étais petit(e)…","Complétez : « Quand j’étais petit(e), je voulais être… »",""],
-  ["t","Mon équipe en un mot","Quel mot décrit le mieux votre équipe ?",""],
+  ["t","Le doyen des chariots","Le chariot le plus âgé chez Electro est…",""],
   ["q","Quiz sécurité","Citez un équipement de protection individuelle indispensable sur votre site.",""],
   ["p","Mon porte-bonheur","Photographiez un objet qui vous porte bonheur.",""],
   ["t","Mon plat de saison","Quel est votre plat de saison d’hiver préféré ?",""],
-  ["q","Question d’effectif","Quel service de l’entreprise est, selon vous, le plus nombreux ?",""],
-  ["t","Mon slogan de Noël","Inventez un slogan de Noël pour votre équipe !",""],
+  ["q","Secret Santa + pull moche de Noël","Quel service de l’entreprise est, selon vous, le plus nombreux ?",""],
+  ["q","🕵️‍♀️ Qui suis-je ?","Je suis présent dans tous les bureaux. On me cherche souvent. Quand on me prête, je ne reviens pas toujours.",""],
   ["t","La blague du jour","À vous de jouer : racontez-nous votre meilleure blague !",""],
   ["p","Photo d’équipe","Photographiez votre équipe (avec son accord !) en mode festif.",""],
-  ["t","Mon plus beau souvenir","Racontez en 2-3 lignes un bon souvenir vécu chez Electro Calorique.",""],
-  ["t","Ma résolution 2027","Quelle est votre résolution pour 2027 ?",""],
-  ["q","Énigme finale","Je suis présent dans l’entreprise sans être un collaborateur. Beaucoup viennent me voir dès leur arrivée. Je rassemble les équipes à toute heure de la journée. Qui suis-je ?",""],
+  ["q","🎄 Citation à compléter","« Le bonheur est la seule chose qui se ______ quand on le partage. »",""],
+  ["q","Le plus ancien","Quel collaborateur est le plus ancien dans l’entreprise ?",""],
+  ["q","Énigme finale","Je suis présent dans l’entreprise sans être un collaborateur. Beaucoup viennent me voir dès leur arrivée. Je rassemble les équipes à toute heure de la journée. Qui suis-je ?",""]
 ];
 /* ==================================== */
 var R=document.getElementById("ecav");function $(s){return R.querySelector(s)}
